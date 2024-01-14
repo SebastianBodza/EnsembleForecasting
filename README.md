@@ -10,7 +10,7 @@ First unoptized proof of concept with two quantized (AWQ) Models. Can also be ru
 |-----------|--------------|--------------|----------|----------|
 | Humaneval | 71.95%       | 76.83%       | 77.44%   | 76.83%   |
 
-[1] Taking the token with the higher probability after taking the max 
+[1] Taking the token with the higher probability after taking the max   
 [2] Taking the average of the logits and the sampling the highest probability
 
 # Next Step: 
