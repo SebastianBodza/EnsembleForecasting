@@ -18,7 +18,7 @@ Ensemble on Logprob base:
 - Take the minimum of both
 Others:
 - using the same model with different system prompts (idea from x @nanulled) e.g. you are debugging and you are a code generator -> easier to implement with better throughput 
-
+- Ensemble LoRa serving with S-LoRa
 
 # Updates: 
 - 2024-01-14: Added Results for single models and ensemble
