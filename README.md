@@ -18,13 +18,12 @@ First unoptized proof of concept with two quantized (AWQ) Models. Can also be ru
 
 # Next Step: 
 Ensemble on Logprob base: 
-- Taking the average from both
 - Take the maximum of both
-- Take the minimum of both
   
 Others:
 - using the same model with different system prompts (idea from x @nanulled) e.g. you are debugging and you are a code generator -> easier to implement with better throughput 
 - Ensemble LoRa serving with S-LoRa
+- Taking more diverse models -> not too much variance in the models and deepseek seems to be fairly dominant.
 
 # Updates: 
 - 2024-01-14: Added Results for single models and ensemble
