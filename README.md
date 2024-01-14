@@ -5,7 +5,20 @@ Got the Idea from participation in a Kaggle Challenges with Tabular-Data and Tim
 
 First unoptized proof of concept with two quantized (AWQ) Models. Can also be run on Colab!
 
-Next Step: Ensemble on Logprob base: 
+# Results
+|           | Magicode-AWQ | Deepseek-AWQ | Ensemble Top Token |
+|-----------|--------------|--------------|----------|
+| Humaneval | 71.95%       | 76.83%       | 77.44%   |
+
+
+# Next Step: 
+Ensemble on Logprob base: 
 - Taking the average from both
 - Take the maximum of both
+- Take the minimum of both
+Others:
 - using the same model with different system prompts (idea from x @nanulled) e.g. you are debugging and you are a code generator -> easier to implement with better throughput 
+
+
+# Updates: 
+- 2024-01-14: Added Results for single models and ensemble
