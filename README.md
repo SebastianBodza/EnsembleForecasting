@@ -6,7 +6,7 @@ Got the Idea from participation in a Kaggle Challenges with Tabular-Data and Tim
 First unoptized proof of concept with two quantized (AWQ) Models. Can also be run on Colab!
 
 # Results
-|           | Magicode-AWQ | Deepseek-AWQ | Ensemble TT [1] | Ensemble MT [2] |
+|   all AWQ quantization     | Magicode | Deepseek | Ensemble TT [1] | Ensemble MT [2] |
 |-----------|--------------|--------------|----------|----------|
 | Humaneval | 71.95%       | 76.83%       | 77.44%   | 76.83%   |
 
