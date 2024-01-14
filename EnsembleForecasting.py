@@ -33,7 +33,16 @@ prompt_template2="""You are an AI programming assistant, utilizing the Deepseek 
 ### Response:
 {response}"""
 
-
+def run_model_prediction(tokenizer, model, input_text):
+    inputs = tokenizer([input_text], return_tensors="pt").to("cuda")
+    outputs = model.generate(**inputs, max_new_tokens=1, return_dict_in_generate=True, output_scores=True)
+    transition_scores = model.compute_transition_scores(outputs.sequences, outputs.scores, normalize_logits=True)
+    input_length = inputs.input_ids.shape[1]
+    generated_tokens = outputs.sequences[:, input_length:]
+    probability = np.exp(transition_scores.cpu().numpy()).squeeze()
+    t_score = transition_scores.cpu().numpy().squeeze()
+    return generated_tokens, probability, t_score
+    
 
 def generate_completions(n, prompt):
   """Comment out the comments to get a color styled output in jupyter notebooks"""
