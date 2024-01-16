@@ -5,6 +5,10 @@ Got the Idea from participation in a Kaggle Challenges with Tabular-Data and Tim
 
 First unoptized proof of concept with two quantized (AWQ) Models. Can also be run on Colab!
 
+**tl;dr:**
+With an Ensemble of two 4-bit quanitzed Models it is possible to beat the official Human-Eval Scores. 
+
+
 # Results
 ## Humaneval
 |   all AWQ quantization     | Magicode | Deepseek | Ensemble TT [1] | Ensemble MT [2] | Ensemble MinT [3] |
@@ -31,3 +35,4 @@ Others:
 
 # Updates: 
 - 2024-01-14: Added Results for single models and ensemble
+- 2024-01-16: Added Results for 34B Models beating the official Score from Deepseek with AWQ-Models (4-bit quantization)
