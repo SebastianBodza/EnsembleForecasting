@@ -6,15 +6,20 @@ Got the Idea from participation in a Kaggle Challenges with Tabular-Data and Tim
 First unoptized proof of concept with two quantized (AWQ) Models. Can also be run on Colab!
 
 # Results
+## Humaneval
 |   all AWQ quantization     | Magicode | Deepseek | Ensemble TT [1] | Ensemble MT [2] | Ensemble MinT [3] |
 |-----------|--------------|--------------|----------|----------|----------|
-| Humaneval | 71.95%       | 76.83%       | 77.44%   | 76.83%   | 76.22%   |
+| ~ 7B | 71.95%       | 76.83%       | 77.44%   | 76.83%   | 76.22%   |
 
+
+|   all AWQ quantization     | Phind-34B | Deepseek-33B | Ensemble TT [1] | 
+|-----------|--------------|--------------|----------|
+| ~ 34B | 73.17%*       |    66.46%*   | 78.66%   | 
 
 [1] Taking the token with the higher probability after taking the max   
 [2] Taking the average of the logits and the sampling the highest probability  
 [3] Taking the min of both outputted logits and the sampling the highest probability
-
+* Different Prompt used 
 # Next Step: 
 Ensemble on Logprob base: 
 - Take the maximum of both -> just sanity checking [1]
