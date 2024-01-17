@@ -37,3 +37,4 @@ Others:
 # Updates: 
 - 2024-01-14: Added Results for single models and ensemble
 - 2024-01-16: Added Results for 34B Models beating the official Score from Deepseek with AWQ-Models (4-bit quantization)
+- 2024-01-17: Added Torch Ensemble Model
